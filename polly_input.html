@@ -71,12 +71,16 @@
         })
 
         function sendToMQTT( email, text) {
-            // alert('Hello world'); 
-            emailValue.value = ''
-            textValue.value = ''
+
+            ClearFields()
             
             console.log(email, text)
             //cmd : mosquitto_pub -t email -m text
+        }
+
+        function ClearFields() {
+          document.getElementById("email").value = "";
+          document.getElementById("text").value = "";
         }
 
     </script>
