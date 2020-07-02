@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <input type="button" id="hw" value="Hello world" />
+    <fieldset>
+      <legend>TTS</legend>
+
+      <ul>
+        <li>
+          <label for="email">E-mail</label>
+          <input type="email" id="email">
+        </li>
+        <li>
+          <label for="text">Text</label>
+          <input type="text" id="text" size="300">
+        </li>
+        <li> 
+          <input type="button" id="send" value="Send">
+        </li>
+      </ul>
+    </fieldset>
+
     <script type="text/javascript">
-        var hw = document.getElementById('hw');
-        hw.addEventListener('click', function(){
+        var email = document.getElementById('email');
+        var text = document.getElementById('text');
+        var send = document.getElementById('send');
+
+        send.addEventListener('click', function(){
             alert('Hello world');
         })
     </script>
