@@ -20,6 +20,10 @@
         margin-bottom: 10px;
       }
 
+      div.centered{
+          text-align: center;
+      }
+
     </style>
   </head>
 <body>
@@ -28,12 +32,16 @@
 
       <ul>
         <li>
-          <label for="email">E-mail</label>
-          <input type="email" id="email">
+          <div class="centered">
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+          </div>
         </li>
         <li>
-          <label for="text">Text</label>
-          <input type="text" id="text" size="100">
+          <div class="centered">
+            <label for="text">Text</label>
+            <input type="text" id="text" size="100">
+          </div>
         </li>
         <li> 
           <input type="submit" id="send" value="Send">
