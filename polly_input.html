@@ -31,7 +31,6 @@
           margin-top: 30px;
       }
 
-
     </style>
   </head>
 <body>
@@ -65,8 +64,14 @@
         var send = document.getElementById('send');
 
         send.addEventListener('click', function(){
-            alert('Hello world');
+            sendToMQTT(email, text)
         })
+
+        function sendToMQTT( email, text) {
+            // alert('Hello world');
+            document.write( '<h1>Email = <span>' + email + '</span>. Text = <span>' + text + '</span>.</h1>' );
+        }
+
     </script>
 </body>
 </html>
