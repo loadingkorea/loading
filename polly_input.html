@@ -52,20 +52,20 @@
         </li>
         <li> 
           <div class="left">
-            <input type="submit" id="send" value="Send" style="width: 100px;">
+            <input type="submit" id="send" value="Send" style="width: 100px;" onclick="sendToMQTT(email, text)">
           </div>
         </li>
       </ul>
     </fieldset>
 
     <script type="text/javascript">
-        var email = document.getElementById('email').nodeValue;
-        var text = document.getElementById('text').nodeValue;
-        var send = document.getElementById('send');
+        // var email = document.getElementById('email');
+        // var text = document.getElementById('text');
+        // var send = document.getElementById('send');
 
-        send.addEventListener('click', function(){
-            sendToMQTT(email, text)
-        })
+        // send.addEventListener('click', function(){
+            // sendToMQTT(email.v, text)
+        // })
 
         function sendToMQTT( email, text) {
             // alert('Hello world');
