@@ -72,6 +72,9 @@
 
         function sendToMQTT( email, text) {
             // alert('Hello world'); 
+            emailValue.value = ''
+            textValue.value = ''
+            
             console.log(email, text)
             //cmd : mosquitto_pub -t email -m text
         }
