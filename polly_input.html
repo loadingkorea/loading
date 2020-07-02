@@ -71,8 +71,9 @@
         })
 
         function sendToMQTT( email, text) {
-            // alert('Hello world');
-            document.write( '<h1>Email = <span>' + email + '</span>. Text = <span>' + text + '</span>.</h1>' );
+            // alert('Hello world'); 
+            console.log(email, text)
+            //cmd : mosquitto_pub -t email -m text
         }
 
     </script>
