@@ -22,7 +22,12 @@
 
       div.centered{
           text-align: left;
-          width: 30px;
+          width: 50px;
+      }
+
+      div.left{
+          text-align: left;
+          width: 50px;
       }
 
 
@@ -34,19 +39,21 @@
 
       <ul>
         <li>
-          <div class="centered">
+          <div class="left">
             <label for="email">E-mail</label>
             <input type="email" id="email" size="30">
           </div>
         </li>
         <li>
-          <div class="centered"></div>
+          <div class="left">
             <label for="text">Text</label>
             <input type="text" id="text" size="140">
           </div>
         </li>
         <li> 
-          <input type="submit" id="send" value="Send">
+          <div class="centered">
+            <input type="submit" id="send" value="Send">
+          </div>
         </li>
       </ul>
     </fieldset>
