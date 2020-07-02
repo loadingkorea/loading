@@ -59,11 +59,14 @@
     </fieldset>
 
     <script type="text/javascript">
-        var emailValue = document.getElementById('email').value;
-        var textValue = document.getElementById('text').value;
+  
         var send = document.getElementById('send');
 
         send.addEventListener('click', function(){
+
+          var emailValue = document.getElementById('email').value;
+          var textValue = document.getElementById('text').value;
+
             sendToMQTT(emailValue, textValue)
         })
 
